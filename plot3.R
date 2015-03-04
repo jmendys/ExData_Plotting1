@@ -1,3 +1,7 @@
+#This program assumes that you have downloaded the data from 
+#https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip
+#and have unzipped the file and placed the file household_power_consumption.txt
+#in the working directory.
 plot3 <- function() {
     #Set English locale so X axis is displayed in English
     Sys.setlocale("LC_TIME", "English")
