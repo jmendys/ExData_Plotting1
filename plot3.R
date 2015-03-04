@@ -14,7 +14,11 @@ plot3 <- function() {
     
     selData <- data[data$Date>=as.Date("2007-02-01") & data$Date<=as.Date("2007-02-02") ,]
     
+    #set the layout and increase the font size (to make the plot readable)
+    par(cex=0.7)
+
     plot(selData[,c(2,7)], type="n", ann=FALSE)
+    
     title( ylab = "Energy sub metering")
     lines(selData[,c(2,7)], col="black")
     lines(selData[,c(2,8)], col="red")

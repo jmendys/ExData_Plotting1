@@ -20,7 +20,7 @@ plot4 <- function() {
     
     #Plot 2
     plot(selData[,2:3], type="n", ann=FALSE)
-    title( ylab = "Global Active Power (kilowatts)")
+    title( ylab = "Global Active Power")
     lines(selData[,2:3])
     
     #Plot voltage
